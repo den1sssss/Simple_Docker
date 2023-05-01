@@ -125,7 +125,7 @@ You chose a pretty simple **nginx**.
 ##### From the command output define and write in the report the container size, list of mapped ports and container ip
 ##### Stop docker image with `docker stop [container_id|container_name]`
 ##### Check that the image has stopped with `docker ps`
-##### Run docker with mapped ports 80 and 443 on the local machine with *run* command
+##### Run docker with ports 80 and 443 in container, mapped to the same ports on the local machine, with *run* command
 ##### Check that the **nginx** start page is available in the browser at *localhost:80*
 ##### Restart docker container with `docker restart [container_id|container_name]`
 ##### Check in any way that the container is running
@@ -192,7 +192,7 @@ _**nginx** can be installed inside the docker itself, or you can use a ready-mad
 ##### Check with `docker images` that everything is built correctly
 ##### Run the built docker image by mapping port 81 to 80 on the local machine and mapping the *./nginx* folder inside the container to the address where the **nginx** configuration files are located (see [Part 2](#part-2-operations-with-container))
 ##### Check that the page of the written mini server is available on localhost:80
-##### Add proxying of */status* page in *./nginx/nginx.conf* to return the **nginx** Яserver status
+##### Add proxying of */status* page in *./nginx/nginx.conf* to return the **nginx** server status
 ##### Restart docker image
 *If everything is done correctly, after saving the file and restarting the container, the configuration file inside the docker image should update itself without any extra steps
 ##### Check that *localhost:80/status* now returns a page with **nginx** status
@@ -223,4 +223,4 @@ Why not try experimenting with deploying a project consisting of several docker 
 ##### Check that the browser returns the page you wrote on *localhost:80* as before
 
 
-💡 [Tap here](https://forms.yandex.ru/u/6357f52902848f350b554d5f/) **to leave your feedback on the project**. Pedago Team really tries to make your educational experience better.
+💡 [Tap here](https://forms.yandex.ru/cloud/6418195450569020f1f159c4/) **to leave your feedback on the project**. Pedago Team really tries to make your educational experience better.
